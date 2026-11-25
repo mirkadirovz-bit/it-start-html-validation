@@ -1,0 +1,11 @@
+{
+  "name": "it-start-html-practice",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "validate": "html-validate index.html about.html"
+  },
+  "devDependencies": {
+    "html-validate": "10.5.0"
+  }
+}

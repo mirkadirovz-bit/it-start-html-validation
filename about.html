@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Учебный сайт об IT-профессиях и проверке HTML-разметки.">
+  <title>О проекте | IT Старт</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Перейти к содержимому</a>
+  <header><nav class="wrap" aria-label="Главная навигация">
+    <a class="brand" href="index.html">&lt;/&gt; IT Старт</a>
+    <div class="navlinks"><a href="index.html">Профессии</a><a href="about.html" aria-current="page">О проекте</a></div>
+  </nav></header>
+  <main id="main" class="wrap">
+    <div class="page-title"><span class="eyebrow">ПРАКТИЧЕСКАЯ РАБОТА 3.1.51</span><h1>О проекте и проверке HTML</h1><p>Этот сайт помогает познакомиться с IT-профессиями и показывает настройку автоматической проверки разметки.</p></div>
+    <section class="panel"><h2>Что использовано</h2><ul><li>HTML для структуры страниц.</li><li>CSS для оформления и адаптации к экрану.</li><li>Локальное SVG-изображение с текстовым описанием.</li><li>html-validate для проверки двух страниц.</li><li>GitHub Actions для запуска проверки после изменений.</li></ul></section>
+    <section class="panel"><h2>Как выполняется проверка</h2><ol><li>Изменения отправляются в ветку main или в Pull Request к main.</li><li>GitHub Actions получает файлы и настраивает Node.js.</li><li>Устанавливается html-validate версии 10.5.0.</li><li>Команда <code>npm run validate</code> проверяет index.html и about.html.</li><li>Ошибки исправляются, затем проверка запускается повторно.</li></ol><p>Правила проверки: <a href="https://html-validate.org/">документация html-validate</a>.</p></section>
+    <section class="panel"><h2>Качество разметки</h2><p>На страницах указаны язык и кодировка, соблюдена иерархия заголовков, у изображения есть alt, а у таблицы — подпись и заголовки. Валидатор проверяет разметку; удобство сайта и внешний вид нужно проверять отдельно.</p><a href="index.html">Вернуться к профессиям</a></section>
+  </main>
+  <footer class="wrap"><p>IT Старт · Учебный проект · Практическая работа 3.1.51</p></footer>
+</body>
+</html>
